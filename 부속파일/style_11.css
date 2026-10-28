@@ -1,0 +1,75 @@
+/* Phone-first overrides. Desktop styles above remain unchanged. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+button,label,a{-webkit-tap-highlight-color:transparent}
+@media (max-width:768px){
+  body{overflow-x:hidden;font-size:15px;line-height:1.65}
+  header{position:sticky;top:0;display:block;padding:10px 12px 8px;padding-top:max(10px,env(safe-area-inset-top));backdrop-filter:blur(14px)}
+  .brand{display:block;font-size:13px;letter-spacing:1px;margin:0 0 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .nav{display:flex;flex-wrap:nowrap;gap:7px;width:100%;overflow-x:auto;padding-bottom:3px;scrollbar-width:none;overscroll-behavior-x:contain}
+  .nav::-webkit-scrollbar{display:none}
+  .nav button{flex:0 0 auto;min-height:40px;padding:8px 12px;font-size:12px;white-space:nowrap}
+  main{width:100%;padding:18px 14px 90px}
+  .hero{grid-template-columns:1fr;gap:14px;margin:4px 0 24px}
+  .hero h1{font-size:clamp(31px,10vw,45px);letter-spacing:-1.8px;line-height:1.14;margin:10px 0}
+  .hero-art{height:165px;order:-1}
+  .seasons{grid-template-columns:1fr;gap:14px}
+  .season .art{height:150px}
+  .season .body{padding:18px}
+  .mission{display:block;padding-bottom:12px;margin-bottom:14px}
+  .mission h2{font-size:23px;line-height:1.35}
+  .card{padding:17px 15px;margin-bottom:13px;border-radius:11px}
+  .card h2{font-size:23px;line-height:1.35}
+  .card h3{font-size:18px;line-height:1.45}
+  .record-grid,.defense-grid,.season-clue-list{grid-template-columns:1fr;gap:10px}
+  .record-grid button{min-height:112px;padding:16px}
+  .defense-option{min-height:150px;padding:15px}
+  button,.season-clue-upload{min-height:46px;font-size:14px;touch-action:manipulation}
+  .row{display:grid;grid-template-columns:1fr;gap:9px;width:100%}
+  .row>button,.row>a,.row>label{width:100%;margin:0;justify-content:center;text-align:center}
+  .spread{display:flex;align-items:center;flex-wrap:wrap}
+  .choice{width:100%;text-align:left;padding:14px 13px;margin:5px 0;line-height:1.5}
+  .notice,.result-box,.paper{padding:14px;margin:13px 0;overflow-wrap:anywhere}
+  dialog{box-sizing:border-box;width:calc(100vw - 16px);max-width:none;max-height:94dvh;margin:auto;padding:17px 14px;border-radius:14px;overflow-y:auto}
+  .modal-head{position:sticky;top:-17px;z-index:3;margin:-17px -14px 12px;padding:13px 14px;background:#1c2b31f5;border-bottom:1px solid var(--line)}
+  .modal-head h2{font-size:19px;line-height:1.35}
+  .modal-head button{min-width:44px;min-height:44px;padding:4px 10px;font-size:20px}
+  #mb{margin-top:10px}
+  .season-clue-story{padding:14px;margin:12px 0}
+  .season-clue-card{min-height:130px;padding:14px}
+  .season-clue-camera{min-height:220px;margin:10px 0}
+  .season-clue-camera video{min-height:220px;max-height:56dvh}
+  .story-hunt-reveal{min-height:220px}
+  .story-hunt-reveal img{height:260px}
+  .story-hunt-reveal b{left:5%;right:5%;bottom:6%;font-size:12px;text-align:center}
+  .room{min-height:360px}
+  .spot{padding:5px;font-size:21px}
+  .spot b{font-size:11px}.spot span{font-size:9px}
+  .call-device{min-height:0;padding:17px 13px;border-width:4px;border-radius:22px}
+  .request-row .row{grid-template-columns:1fr}
+  .credits-wrap,.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .credits-table{min-width:620px}
+  .court-caption{padding:38px 14px 12px}
+  .court-caption b{font-size:16px}
+  .timeline-entry{padding-left:14px;margin:16px 0}
+  .s2-shell{width:100%;padding:10px 10px calc(18px + env(safe-area-inset-bottom))}
+  .s2-game{margin:8px auto;padding:17px 14px;border-radius:14px}
+  .s2-game h1,.s2-court h1{font-size:27px;line-height:1.25}
+  .s2-wallet{grid-template-columns:1fr;gap:7px}
+  .s2-choice,.s2-offers{grid-template-columns:1fr;gap:9px}
+  .s2-card{width:132px;height:176px;font-size:64px}
+  footer{padding:18px 14px calc(18px + env(safe-area-inset-bottom))}
+  #toast{bottom:calc(12px + env(safe-area-inset-bottom));width:calc(100vw - 24px);padding:12px 14px;text-align:center}
+}
+@media (max-width:390px){
+  main{padding-left:10px;padding-right:10px}
+  .hero h1{font-size:30px}
+  .card{padding:15px 12px}
+  dialog{width:calc(100vw - 8px);padding-left:11px;padding-right:11px}
+  .modal-head{margin-left:-11px;margin-right:-11px;padding-left:11px;padding-right:11px}
+  .room{min-height:330px}
+}
+@media (orientation:landscape) and (max-height:520px){
+  header{position:relative}
+  dialog{max-height:98dvh}
+  .season-clue-camera video{max-height:65dvh}
+}

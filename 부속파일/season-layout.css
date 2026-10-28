@@ -1,0 +1,42 @@
+.nav>a{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;white-space:nowrap;padding:8px 12px;font-size:12px;border:1px solid #566772;border-radius:9px;text-decoration:none}.nav{align-items:center}a.card{display:block;text-decoration:none;color:var(--text)}a.card:hover{border-color:var(--accent)}.s2-sms{max-width:390px;margin:auto;border:5px solid #52616c;border-radius:28px;padding:22px 17px;background:#f3f4f6;color:#15222e;opacity:0;transform:translateY(18px);transition:opacity .4s,transform .4s}.s2-sms.arrived{opacity:1;transform:none}.s2-phone-top{display:flex;justify-content:space-between;font-size:12px;color:#52616c}.s2-contact{border-bottom:1px solid #c4ccd3;padding:20px 0;font-size:23px;font-weight:bold}.s2-contact span{display:block;font-size:12px;font-weight:normal}.s2-message{background:#dfe3e8;border-radius:16px 16px 16px 3px;padding:14px;margin:16px 24px 16px 0;line-height:1.65}.s2-message small{display:block;color:#607181;font-size:10px}.s2-fake-link{color:#1964af;border-top:1px solid #b9c9d7;margin-top:10px;padding-top:10px}.s2-sms-thought{color:#334b5c;margin-top:25px}.s2-sms>button{width:100%}.s2-sms .small{color:#52616c;margin-top:14px}.s2-call-links{display:grid;gap:14px;margin:24px 0}.s2-call-links a{display:block;text-align:center;text-decoration:none;border-radius:12px;padding:20px}.s2-call-links b{display:block;font-size:25px}.s2-call-links span{font-size:14px}.s2-debt strong{font-size:clamp(23px,6vw,38px)}
+
+.s2-law-notice{margin:22px 0 12px;padding:14px;border:1px solid #ed8e80;background:#381c23;color:#ffe1dc;border-radius:10px;font-size:12px;line-height:1.7}.s2-law-notice b,.s2-law-notice span{display:block}.s2-law-notice b{font-size:15px;color:#ffb6a8}.s2-law-notice a{color:#b3d9ff}
+.s2-casino-view{background:linear-gradient(#02071142,#02071190),url('./casino-site-bg.png') center/cover fixed!important}.s2-casino-view .s2-game{background:linear-gradient(#071a23e8,#03151eeb);border:1px solid #bca16b;box-shadow:0 20px 70px #000b}.s2-site-header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #bca16b;padding:12px 0;margin-bottom:18px;gap:12px}.s2-site-header b{color:#e7c88c;letter-spacing:2px}.s2-site-header span{font-size:11px;color:#d0d7d7}.s2-photo-card{background-color:#fff!important;background-image:url('./poker-card-sheet.png');background-position:var(--card-x,3.37%) 45.87%;background-size:628.22% 146.88%;background-repeat:no-repeat;width:144px!important;height:206px!important;position:relative;border:1px solid #dfd7c7!important;border-radius:10px!important;box-shadow:0 12px 26px #0009;transition:transform .25s}.s2-photo-card.revealed{transform:rotate(-3deg)}.s2-card-caption{position:absolute;bottom:-32px;left:0;right:0;text-align:center;color:#fff;font-size:17px;font-weight:700}.s2-casino-view .s2-card{margin-bottom:44px}
+.s2-photo-card{background-image:url("./poker-card-sheet.png")!important;background-position:var(--card-x,3.37%) 45.87%!important;background-size:628.22% 146.88%!important;background-repeat:no-repeat!important}
+/* Season 2 portrait story background and phone layout */
+body[data-season="2"]{min-height:100dvh;background:#09151e url('./season2-mobile-story-bg.png') center/cover fixed no-repeat}
+body[data-season="2"]>header{background:#09151ee8;backdrop-filter:blur(8px)}
+body[data-season="2"]>main{min-height:calc(100dvh - 170px)}
+body[data-season="2"]>main>.hero,body[data-season="2"]>main>.card{background:#091822c9;backdrop-filter:blur(5px);border:1px solid #6f89975c;border-radius:18px;padding:22px}
+body[data-season="2"] .s2-sim:not(.s2-casino-view){background:linear-gradient(#07121b55,#07121b88),url('./season2-mobile-story-bg.png') center/cover fixed no-repeat!important}
+body[data-season="2"] .s2-sim:not(.s2-casino-view) .s2-game{background:#0a1926dc;border-color:#819ba966;box-shadow:0 16px 60px #0006;backdrop-filter:blur(5px)}
+body[data-season="2"]:has(#season2Simulation){overflow:hidden}
+body[data-season="2"]:has(#season2Simulation)>footer{visibility:hidden}
+body[data-season="2"] #season2Simulation{height:100dvh;max-height:100dvh;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+@media(max-width:600px){
+body[data-season="2"]{background-position:center top}
+body[data-season="2"]>main{padding:16px 12px 30px}
+body[data-season="2"]>main>.hero,body[data-season="2"]>main>.card{padding:20px 17px;margin-bottom:16px}
+body[data-season="2"] .hero h1{font-size:34px;letter-spacing:-1.5px}
+body[data-season="2"] .s2-shell{padding:max(12px,env(safe-area-inset-top)) 10px max(20px,env(safe-area-inset-bottom));width:100%;min-height:100dvh;display:flex;align-items:flex-start;justify-content:center}
+body[data-season="2"] .s2-game{width:100%;max-width:460px;padding:18px 15px;margin:0 auto;border-radius:18px;box-sizing:border-box}
+body[data-season="2"] .s2-game h1{font-size:28px;line-height:1.25;overflow-wrap:anywhere}
+body[data-season="2"] .s2-game h2{font-size:22px}
+body[data-season="2"] .s2-game p{font-size:15px;line-height:1.75}
+body[data-season="2"] .s2-game .s2-note,body[data-season="2"] .s2-game .small{font-size:12px;line-height:1.7}
+body[data-season="2"] .s2-sms{padding:17px 13px;border-width:4px}
+body[data-season="2"] .s2-contact{padding:15px 0}
+body[data-season="2"] .s2-message{padding:13px;margin:13px 10px 13px 0}
+body[data-season="2"] .s2-game button{min-height:48px;white-space:normal;overflow-wrap:anywhere}
+body[data-season="2"] .s2-casino-view .s2-wallet{grid-template-columns:1fr 1fr;gap:8px}
+body[data-season="2"] .s2-wallet b{font-size:20px}
+body[data-season="2"] .s2-photo-card{width:120px!important;height:172px!important}
+body[data-season="2"] .s2-casino-view .s2-choice{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+body[data-season="2"] .s2-law-notice{padding:12px;font-size:11px}
+body[data-season="2"] .s2-law-notice b{font-size:14px}
+body[data-season="2"] .s2-site-header{align-items:flex-start}.s2-site-header span{max-width:130px;text-align:right}
+}
+
+.s2-fake-link{display:block;width:100%;text-align:left;background:transparent!important;color:#1964af!important;border:0!important;border-radius:0!important;padding:12px 0!important;font-size:15px!important;text-decoration:underline}.s2-home-banner{padding:34px 18px;background:linear-gradient(#00121c55,#00121cc9),url("./casino-site-bg.png") center/cover;border:1px solid #bca16b;border-radius:14px;margin:22px 0;text-align:center}.s2-home-banner h1{color:#f1d598;letter-spacing:3px}.s2-home-banner span{font-size:11px;color:#e0c693}.s2-start-card{max-width:620px;margin:25px auto!important;padding:32px 22px!important}.s2-start-card h1{font-size:34px}.s2-start-card>button{width:100%;margin-top:18px}
+
+.s2-opening-poster{position:fixed;inset:0;z-index:1000000;background:#000;display:grid;place-items:center;height:100dvh}.s2-opening-poster button{display:block;width:100%;height:100%;border:0;border-radius:0;padding:0;background:#000;cursor:pointer}.s2-opening-poster img{display:block;width:100%;height:100%;object-fit:contain}.s2-opening-poster button:focus-visible{outline:3px solid #ffe267;outline-offset:-5px}

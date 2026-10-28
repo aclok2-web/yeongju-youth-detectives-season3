@@ -1,0 +1,8 @@
+
+.sms-intro{display:block;overflow-y:auto;overscroll-behavior:contain;padding:14px 14px 28px}
+.sms-phone{height:auto;max-height:none;min-height:0;margin:0 auto;overflow:visible;display:block}
+.sms-image-wrap{display:block;min-height:0;overflow:visible}
+.sms-image-wrap img{width:100%;height:auto;min-height:0;max-height:none;object-fit:contain}
+.sms-reply{position:relative}
+.sms-interview-panel p{margin:4px 0 13px;color:#c8ced1;font-size:13px}.sms-interview-button{width:100%;padding:14px 18px!important;border:0!important;border-radius:24px!important;background:#307bed!important;color:#fff!important;font-weight:800!important;font-size:15px!important}.sms-interview-button:disabled{background:#414b58!important;color:#bac1c8!important}.sms-reply-phone{animation:smsReplyArrival .45s ease both}@keyframes smsReplyArrival{0%{transform:translateX(14px);filter:brightness(.45)}40%{transform:translateX(-8px)}70%{transform:translateX(5px)}100%{transform:none;filter:none}}
+@media(max-width:540px){.sms-intro{padding:0 0 24px}.sms-phone{width:100%;height:auto;min-height:0;max-height:none}.sms-image-wrap img{height:auto;min-height:0;max-height:none}.sms-reply{padding-bottom:max(18px,env(safe-area-inset-bottom))}}
